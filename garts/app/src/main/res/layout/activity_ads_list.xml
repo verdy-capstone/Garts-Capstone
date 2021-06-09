@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ads_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayBg"
+    android:focusableInTouchMode="true"
+    tools:context="garts.domain.com.garts.ads.activities.AdsListActivity">
+
+    <RelativeLayout
+        android:id="@+id/alTopView"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/main_color">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/alSearchTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/alChatButt"
+            android:layout_toEndOf="@+id/alBackButt"
+            android:backgroundTint="#f2f2f2"
+            android:gravity="center"
+            android:hint="@string/browse_search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="none"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="16dp"
+            android:singleLine="true"
+            android:textColor="@color/whiteTextColor"
+            android:textColorHint="@color/inputHint"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/alBackButt"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="13dp"
+            android:src="@drawable/back_ic" />
+
+        <ImageView
+            android:id="@+id/alChatButt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:src="@drawable/chat_square_ic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/alNoResultsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/alOptionsLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            ads:srcCompat="@drawable/no_search" />
+
+        <TextView
+            android:id="@+id/alNoSearchTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/ads_list_search_empty"
+            android:textAlignment="center"
+            android:textColor="@color/blackTextColor"
+            android:textSize="14sp"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/aal_ads_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/alOptionsLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:clipToPadding="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="55dp"
+        android:scrollbars="none"
+        tools:listitem="@layout/item_ads_list" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/admobBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ADMOB_BANNER_UNIT_ID" />
+
+    <LinearLayout
+        android:id="@+id/alOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/alTopView"
+        android:background="@color/grayFiltersBg"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/aal_location_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="4dp">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="4dp"
+                ads:srcCompat="@drawable/small_loc_icon" />
+
+            <TextView
+                android:id="@+id/alDistanceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/alCityCountryTV"
+                android:layout_toEndOf="@+id/imageView7"
+                android:singleLine="true"
+                android:text="@string/ads_list_filter_location_loading"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/alCityCountryTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alDistanceTxt"
+                android:layout_toEndOf="@+id/imageView7"
+                android:maxLines="2"
+                android:textAllCaps="false"
+                android:textColor="@color/blackTextColor"
+                android:textSize="12sp"
+                tools:text="New York, USA" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/alLine1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/aal_sort_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="4dp">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="4dp"
+                ads:srcCompat="@drawable/small_sort_icon" />
+
+            <TextView
+                android:id="@+id/alsortlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageView9"
+                android:singleLine="true"
+                android:text="@string/ads_list_sort_by_title"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/alSortByTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alsortlabel"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/imageView9"
+                android:background="@android:color/transparent"
+                android:maxLines="2"
+                android:text="@string/ads_list_default_sort_by"
+                android:textAllCaps="false"
+                android:textColor="@color/blackTextColor"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/alLine2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/aal_category_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="4dp">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="4dp"
+                ads:srcCompat="@drawable/small_category" />
+
+            <TextView
+                android:id="@+id/alcatlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageView8"
+                android:singleLine="true"
+                android:text="@string/ads_list_category_filter_title"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/alCategoryTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alcatlabel"
+                android:layout_toEndOf="@+id/imageView8"
+                android:maxLines="2"
+                android:text="@string/categories_all_title"
+                android:textAllCaps="false"
+                android:textColor="@color/blackTextColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/alSubcategoryTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alCategoryTV"
+                android:layout_toEndOf="@+id/imageView8"
+                android:maxLines="1"
+                android:text="@string/categories_all_title"
+                android:textAllCaps="false"
+                android:textColor="@color/blackTextColor"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

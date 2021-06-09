@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/distance_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="garts.domain.com.garts.DistanceMapActivity">
+
+    <RelativeLayout
+        android:id="@+id/mapTopView"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/main_color">
+
+        <Button
+            android:id="@+id/mapApplyButt"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:text="@string/distance_map_apply"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/mapBackButt"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignBaseline="@+id/mapApplyButt"
+            android:layout_alignBottom="@+id/mapApplyButt"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:text="@string/alert_cancel_button"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/distance_map_set_distance"
+            android:textColor="@color/whiteTextColor"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_above="@+id/mapDistanceTxt"
+        android:layout_below="@+id/mapTopView"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        tools:context="garts.domain.com.garts.DistanceMapActivity" />
+
+    <SeekBar
+        android:id="@+id/mapDistanceSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:max="200"
+        android:progressBackgroundTint="#333"
+        android:progressTint="#333"
+        android:thumbTint="@color/main_color" />
+
+    <TextView
+        android:id="@+id/mapDistanceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mapDistanceSeekBar"
+        android:layout_alignEnd="@+id/mapDistanceSeekBar"
+        android:layout_alignBottom="@+id/mapDistanceSeekBar"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/distance_map_distance_range"
+        android:textAlignment="center"
+        android:textColor="@color/blackTextColor"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/mapTopView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/whiteTextColor"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/dmSearchTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mapTopView"
+            android:layout_alignStart="@+id/mapDistanceTxt"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.88"
+            android:ems="10"
+            android:hint="@string/distance_map_search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/dmCurrLocationButt"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/curr_location_butt" />
+    </LinearLayout>
+</RelativeLayout>

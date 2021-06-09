@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="35dp"
+    android:paddingBottom="35dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/select_image_source_alert_title"
+        android:textColor="@color/blackTextColor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:text="@string/choose_the_way_source_to_upload_picture"
+        android:textColor="@color/grayTextColor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dmp_camera_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="@string/take_picture_title"
+        android:textColor="@color/main_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dmp_gallery_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="@string/pick_image_from_gallery_title"
+        android:textColor="@color/main_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dmp_cancel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="@string/alert_cancel_button"
+        android:textColor="@color/main_color"
+        android:textSize="16sp" />
+</LinearLayout>

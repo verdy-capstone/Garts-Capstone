@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/actAvatarImg"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/actDateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/actAvatarImg"
+        android:layout_alignEnd="@+id/actTextTxt"
+        android:layout_marginRight="10dp"
+        android:text="@string/inbox_text_placeholder"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/actTextTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/actAvatarImg"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/actAvatarImg"
+        android:maxLines="2"
+        android:text="@string/inbox_text_placeholder"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/actTextTxt"
+        android:layout_marginTop="4dp"
+        android:background="@color/cardview_shadow_start_color" />
+</RelativeLayout>

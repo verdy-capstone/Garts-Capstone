@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "64837311564",
+    "project_id": "garts-bc99b",
+    "storage_bucket": "garts-bc99b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64837311564:android:0634bbed5864a71e7e28e9",
+        "android_client_info": {
+          "package_name": "garts.domain.com.garts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64837311564-umt416nj3eufo5hr9gdja3angv0f43kt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn84T8e0bjdrs5T_aLNZD-q05M5PeoURE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64837311564-umt416nj3eufo5hr9gdja3angv0f43kt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

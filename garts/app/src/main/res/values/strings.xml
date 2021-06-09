@@ -1,0 +1,279 @@
+<resources>
+    <string name="app_name">GARTS</string>
+
+
+    <!-- IMPORTANT: REPLACE THE STRING BELOW WITH YOUR OWN BANNER UNIT ID YOU'LL GET FROM http://apps.admob.com -->
+    <string name="ADMOB_BANNER_UNIT_ID">google.com, pub-8492820436412089, DIRECT, f08c47fec0942fa0</string>
+
+
+    <!-- IMPORTANT: REPLACE THE STRING BELOW WITH YOUR OWN FACEBOOK APP ID YOU'LL GET ON https://developers.facebook.com/apps/ -->
+    <string name="facebook_app_id">3717199915045019</string>
+
+    <!-- BELOW ARE ALL THE TEXTS USED IN THE APP -->
+
+    <!-- Common -->
+    <string name="progress_dialog_loading">Please wait…</string>
+    <string name="gallery_chooser_title">Select Image</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_cancel_button">Cancel</string>
+    <string name="not_available_text_placeholder">N/A</string>
+    <string name="filter_condition_new">New</string>
+    <string name="filter_condition_used">Used</string>
+    <string name="geocoder_not_present_error">Geocoder not present!</string>
+    <string name="get_location_failure">Failed to get your Location.\nGo into Settings and make sure Location Service is enabled!</string>
+    <string name="take_video_title">Take a Video</string>
+    <string name="take_picture_title">Take a Picture</string>
+    <string name="select_image_chooser_title">Select Image</string>
+    <string name="select_video_chooser_title">Select Video</string>
+    <string name="failed_to_retrieve_photo_error">Failed to retrieve photo</string>
+    <string name="select_image_source_alert_title">Select source</string>
+    <string name="pick_image_from_gallery_title">Pick from Gallery</string>
+    <string name="image_preview_screen_title">PINCH TO ZOOM | TAP TO CLOSE</string>
+    <string name="username_formatted">\@%s</string>
+    <string name="select_option_title">Select an option</string>
+    <string name="watch_video_screen_title">Watch Video</string>
+    <string name="map_description">You must move the Map and to choose a Location, or just close this Map screen</string>
+    <string name="move_and_zoom_to_set_location">Move and zoom to set location</string>
+
+    <!-- Wizard -->
+    <string name="wizard_page1">SELL ART QUICKLY, CHAT TO BUY\n\n.</string>
+    <string name="wizard_page2">LIST YOUR ITEM IN NO TIME\n\nHaving some paintings but dont know where to sell or need illustration for your project? Garts have all.</string>
+    <string name="wizard_page3">PRIVATELY TALK TO SELLERS\n\nTalk to sellers what dou you want.</string>
+    <string name="wizard_terms_alert_title">Do you accept our Terms of Service?</string>
+    <string name="wizard_terms_alert_accept">Yes</string>
+    <string name="wizard_terms_alert_read">Read Terms of Service</string>
+    <string name="wizard_terms_title">By signing up you agree to our Terms of Service</string>
+    <string name="wizard_signup_button">Sign up or Login in with Email</string>
+
+    <!-- Terms of Use -->
+    <string name="terms_of_use_title">Terms of Use</string>
+
+    <!-- Sign Up -->
+    <string name="sign_up_username_hint">choose a username</string>
+    <string name="sign_up_password_hint">choose a password</string>
+    <string name="sign_up_email_hint">type your email address</string>
+    <string name="sign_up_fullname_hint">type your full name</string>
+    <string name="sign_up_agree_terms">I agree to Terms Of Service</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="sign_up_validation_error">You must fill all the fields to Sign Up!</string>
+    <string name="sign_up_terms_warning">You must accept out Terms of Service in order to sign up.</string>
+
+    <!-- Login -->
+    <string name="login_username_hint">username</string>
+    <string name="login_password_hint">password</string>
+    <string name="login_button">Login</string>
+    <string name="login_sign_up_button">Sign up with Email</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="login_forgot_password_alert">Type the valid email address you\'ve used to register on this app</string>
+    <string name="login_forgot_password_success">We\'ve sent you an email to reset your password!</string>
+
+    <!-- Home tabs -->
+    <string name="home_tab_browse">Browse</string>
+    <string name="home_tab_likes">My Likes</string>
+    <string name="home_tab_activity">Activity</string>
+    <string name="home_tab_account">Account</string>
+    <string name="options_dots">•••</string>
+
+    <!-- Browse -->
+    <string name="browse_search_warning">You must type something!</string>
+    <string name="browse_chat_error">You must be logged in to see your Chats. Want to login now?</string>
+    <string name="browse_search_hint">Search on GARTS…</string>
+
+    <!-- My Likes -->
+    <string name="my_likes_screen_title">My Likes</string>
+    <string name="my_likes_empty_screen_description">Listings you liked will be displayed here.</string>
+
+    <!-- Activity -->
+    <string name="activity_remove_success">Activity removed!</string>
+    <string name="activity_screen_title">Activity</string>
+    <string name="activity_delete_description">Long press to delete</string>
+
+    <!-- Account -->
+    <string name="account_logout_warning_title">Are you sure you want to logout?</string>
+    <string name="account_logout_loading">Logging out…</string>
+    <string name="account_verified">Yes</string>
+    <string name="account_not_verified">No</string>
+    <string name="account_screen_title">My account</string>
+    <string name="account_joined_title">Joined:</string>
+    <string name="account_verified_title">Verified:</string>
+    <string name="account_edit_profile_button">Edit Profile</string>
+    <string name="account_feedbacks_button">Feedbacks</string>
+    <string name="account_logout_button">Logout</string>
+    <string name="account_my_ads_section_title">MY ADS</string>
+
+    <!-- Sell / Edit item -->
+    <string name="sell_edit_editing_title">Edit item</string>
+    <string name="sell_edit_selling_title">Sell an item</string>
+    <string name="sell_edit_video_error">The video file could not be retrieved</string>
+    <string name="sell_edit_video_too_long_error">Your video is longer than %s seconds. Please choose or take a shorter video</string>
+    <string name="sell_edit_default_condition">@string/filter_condition_new</string>
+    <string name="sell_edit_input_validation_error">You must make sure you\'ve inserted the following details:\n-Category\n-Ad Title\n-Condition of the item\n-A description\n-First image</string>
+    <string name="sell_edit_delete_alert_title">Are you sure you want to delete this item?</string>
+    <string name="sell_edit_delete_ok">Delete Item</string>
+    <string name="sell_edit_submit_success">Your Ad has been successfully posted!</string>
+    <string name="sell_edit_get_location_failure">Failed to get your Location. Go into Settings and make sure Location Service is enabled, otherwise your Ad will be posted in New York City as default location</string>
+    <string name="sell_edit_picture_failure">Failed to retrieve photo</string>
+    <string name="sell_edit_location_failure">Location could not be retrieved!</string>
+    <string name="sell_edit_item_delete_success">Your Item has been deleted!</string>
+    <string name="sell_edit_subcategory_edit">Subcategory (optional)</string>
+    <string name="sell_edit_add_images_title">Add images (1st one required)</string>
+    <string name="sell_edit_image_text_placeholder">+\nIMAGE</string>
+    <string name="sell_edit_add_video_title">Add Video</string>
+    <string name="sell_edit_video_text_placeholder">+\nVIDEO</string>
+    <string name="sell_edit_details_title">DETAILS</string>
+    <string name="sell_edit_category_title">Category</string>
+    <string name="sell_edit_title">Title</string>
+    <string name="sell_edit_title_hint">Title of the item you\'re selling</string>
+    <string name="sell_edit_price_title">Price</string>
+    <string name="sell_edit_price_hint">Set a price for your item</string>
+    <string name="sell_edit_condition_title">Condition</string>
+    <string name="sell_edit_location_title">Location</string>
+    <string name="sell_edit_choose_location_placeholder">Choose location (optional)*</string>
+    <string name="sell_edit_location_description">*If you don\'t choose a location, your current one will be set by default</string>
+    <string name="sell_edit_description_title">Description</string>
+    <string name="sell_edit_description_hint">Type a description of your item</string>
+    <string name="sell_edit_delete_button">Delete</string>
+
+    <!-- Categories -->
+    <string name="categories_screen_title">Choose category</string>
+    <string name="categories_item_text_placeholder">Loading…</string>
+    <string name="categories_sort_by_recent_title">Recent</string>
+    <string name="categories_sort_by_lowest_price_title">Lowest Price</string>
+    <string name="categories_sort_by_highest_price_title">Highest Price</string>
+    <string name="categories_sort_by_most_liked_title">Most Liked</string>
+    <string name="categories_report_type_ad">Ad</string>
+    <string name="categories_report_type_user">User</string>
+    <string name="categories_all_title">All</string>
+    <string name="categories_done_error">Select a Category</string>
+
+    <!-- Subcategories -->
+    <string name="subcategories_selection_empty">Select a subcategory</string>
+    <string name="subcategories_select_title">Select subcategory</string>
+    <string name="subcategories_empty_for_current_category">No subcategories for the selected category</string>
+
+    <!-- Ads list -->
+    <string name="ads_list_search_empty">Your search did not match any listings. Try another search?</string>
+    <string name="ads_list_filter_location_loading">loading…</string>
+    <string name="ads_list_sort_by_title">SORT BY</string>
+    <string name="ads_list_default_sort_by">@string/categories_sort_by_recent_title</string>
+    <string name="ads_list_category_filter_title">CATEGORY</string>
+    <string name="ads_list_search_validation_error">You must type something!</string>
+    <string name="ads_list_distance_formatted">%s Mi FROM</string>
+
+    <!-- Ad Details -->
+    <string name="ad_details_screen_title">Ad details</string>
+    <string name="ad_details_video_watch_button">Video: Watch</string>
+    <string name="ad_details_video_not_available">Video: N/A</string>
+    <string name="ad_details_options_alert_title">Select option</string>
+    <string name="ad_details_report_ad_option">Report Ad</string>
+    <string name="ad_details_share_option">Share</string>
+    <string name="ad_details_share_chooser_title">Share on…</string>
+    <string name="ad_details_share_description">Check this out: \'%s\' on #GARTS</string>
+    <string name="ad_details_user_block_message">Sorry, @%s has blocked you, you can\'t chat with this user.</string>
+    <string name="ad_details_chat_error">You must be logged in to chat. Want to login now?</string>
+    <string name="ad_details_user_liked_your_ad">\@%s liked your Ad: %s</string>
+    <string name="ad_details_like_ad_error">You must be logged in to like this Ad. Want to login now?</string>
+    <string name="ad_details_comment_error">You must be logged in to comment. Want to login now?</string>
+    <string name="ad_details_feedback_already_sent_error">You already sent a feedback to this Seller!</string>
+    <string name="ad_details_comment_login_error">You must be logged in to send a feedback. Want to login now?</string>
+    <string name="ad_details_post_a_comment_button">POST A COMMENT</string>
+    <string name="ad_details_send_feedback_button">Send Feedback</string>
+    <string name="ad_details_verified_title">Verified:</string>
+    <string name="ad_details_joined_title">Joined:</string>
+    <string name="ad_details_seller_section_title">SELLER</string>
+    <string name="ad_details_location_title">Location</string>
+    <string name="ad_details_subcategory_title">Subcategory</string>
+    <string name="ad_details_category_title">Category</string>
+    <string name="ad_details_condition_title">Condition</string>
+
+    <!-- Chats -->
+    <string name="chats_screen_title">Chats</string>
+    <string name="chats_sent_message_title">You wrote:</string>
+    <string name="chats_user_block_error">Sorry, @%s has blocked you. You can\'t chat with this user.</string>
+    <string name="chats_item_text_placeholder">loading…</string>
+
+    <!-- Comments -->
+    <string name="comments_screen_title">Comments</string>
+    <string name="comments_input_validation_error">You must type something!</string>
+    <string name="comments_user_commented">\@%s commented your Ad: \'%s\'</string>
+    <string name="comments_text_placeholder">loading…</string>
+    <string name="comments_send_button">Send</string>
+    <string name="comments_input_hint">Type here…</string>
+
+    <!-- Distance map -->
+    <string name="distance_map_distance">%s miles around your location</string>
+    <string name="distance_map_apply">Apply</string>
+    <string name="distance_map_set_distance">Set distance</string>
+    <string name="distance_map_distance_range">50 miles around your location</string>
+    <string name="distance_map_search_hint">Type a location and hit search</string>
+
+    <!-- Edit Profile -->
+    <string name="edit_profile_screen_title">Edit Profile</string>
+    <string name="edit_profile_change_photo_button">Change Photo</string>
+    <string name="edit_profile_username_title">Username</string>
+    <string name="edit_profile_full_name_title">Full Name</string>
+    <string name="edit_profile_website_title">Website</string>
+    <string name="edit_profile_website_hint">ex: http://mywebsite.com</string>
+    <string name="edit_profile_about_me_title">About me</string>
+    <string name="edit_profile_terms_of_service_title">Terms of Service</string>
+    <string name="edit_profile_input_validation_error">You must insert at least an username and your full name!</string>
+    <string name="edit_profile_submit_success">Your Profile has been updated!</string>
+    <string name="edit_profile_reset_password_description">Type the valid email address you\'ve used to register on this app</string>
+    <string name="edit_profile_reset_password_title">Reset Password</string>
+    <string name="edit_profile_reset_password_success">We\'ve sent you an email to reset your password!</string>
+
+    <!-- Feedbacks -->
+    <string name="feedbacks_screen_title">Feedbacks</string>
+    <string name="feedbacks_text_placeholder">loading…</string>
+
+    <!-- Inbox -->
+    <string name="inbox_input_validation_error">You must type something or send a picture!</string>
+    <string name="inbox_unblock_user_title">Unblock User</string>
+    <string name="inbox_block_user_title">Block User</string>
+    <string name="inbox_options_alert_title">Select option</string>
+    <string name="inbox_report_user_option">Report User</string>
+    <string name="inbox_block_user_option">Block User</string>
+    <string name="inbox_block_success">You\'ve blocked this User, you will no longer get Chat messages from @%s</string>
+    <string name="inbox_unblocked_user">You\'ve unblocked @%s</string>
+    <string name="inbox_delete_chat_option">Delete Chat</string>
+    <string name="inbox_delete_chat_alert_title">Are you sure you want to delete this Chat? @%s will not be able to see these messages either.</string>
+    <string name="inbox_image_message_tap_to_close">Tap the picture to close</string>
+    <string name="inbox_message_sending_loading">Sending…</string>
+    <string name="inbox_image_sending_loading">Sending image…</string>
+    <string name="inbox_text_placeholder">loading…</string>
+    <string name="inbox_type_your_message">type your message</string>
+    <string name="inbox_send_button">Send</string>
+
+    <!-- Report -->
+    <string name="report_screen_title">Report</string>
+    <string name="report_title_formatted">Report %s</string>
+    <string name="report_alert_warning_title">Are you sure you want to report this %s for the following reason:\n%s?</string>
+    <string name="report_warning_yes">Yes, I\'m sure</string>
+    <string name="report_success">Thanks for reporting this %s. We\'ll review it within 24h</string>
+    <string name="report_automatically_reporting">**Automatically reported after reporting the its Seller**</string>
+
+    <!-- Send feedback -->
+    <string name="send_feedback_screen_title">Send Feedback</string>
+    <string name="send_feedback_text_placeholder">loading…</string>
+    <string name="send_feedback_send_button">Send</string>
+    <string name="send_feedback_description">TAP A DOT TO RATE</string>
+    <string name="send_feedback_write_review_title">WRITE A SHORT REVIEW</string>
+    <string name="send_feedback_to_username">to @%s</string>
+    <string name="send_feedback_input_validation_error">You must rate at least 1 star and write a short review!</string>
+    <string name="send_feedback_success">Thanks, your feedback has been sent!</string>
+
+    <!-- Sort by -->
+    <string name="sort_by_screen_title">Sort By</string>
+    <string name="user_profile_text_placeholder">loading…</string>
+    <string name="user_profile_joined_title">Joined:</string>
+    <string name="user_profile_verified_title">Verified:</string>
+    <string name="user_profile_check_feedbacks_button">Check Feedbacks</string>
+    <string name="user_profile_ads_posted_title">ADS POSTED</string>
+    <string name="user_profile_bio_error">This user has not provided a Bio yet</string>
+    <string name="user_profile_verified_yes">Verified: Yes</string>
+    <string name="user_profile_verified_no">Verified: No</string>
+    <string name="user_profile_loading_ads">Loading ads…</string>
+    <string name="choose_the_way_source_to_upload_picture">Choose the way/source to upload picture</string>
+    <string name="loading">Loading...</string>
+
+</resources>

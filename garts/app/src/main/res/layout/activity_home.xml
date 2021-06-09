@@ -1,0 +1,31 @@
+<RelativeLayout
+    android:id="@+id/ah_drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <garts.domain.com.garts.common.widgets.NonSwipeableViewPager
+        android:id="@+id/ah_content_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_navigation_clickable_area" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_navigation_clickable_area"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:elevation="3dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ah_bottom_navigation_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="5dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        tools:listItem="@layout/item_bottom_navigation_regular_tab" />
+</RelativeLayout>

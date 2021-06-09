@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="garts.domain.com.garts">
+
+    <!-- permissions -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"
+        tools:ignore="UniquePermission" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <!-- For Push Notifications -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <!-- IMPORTANT: Replace "garts.domain.com.garts" with your own app's package name! -->
+    <permission
+        android:name="garts.domain.com.garts.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="garts.domain.com.garts.permission.C2D_MESSAGE"/>
+
+    <application
+        android:name="garts.domain.com.garts.utils.Configs"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/back_ic"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:supportsRtl"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="garts.domain.com.garts.landing.SplashScreen"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="garts.domain.com.garts.landing.TermsOfUse"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"/>
+
+        <activity
+            android:name="garts.domain.com.garts.landing.SignUp"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.landing.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.home.activities.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        <activity
+            android:name="garts.domain.com.garts.wizard.WizardActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.selledit.activities.SellEditItemActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.ads.activities.AdsListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.DistanceMapActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.filters.CategoriesActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.filters.SubcategoriesActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.SortByActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.ReportAdOrUserActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.Comments"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.ads.activities.AdDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.WatchVideo"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.FullScreenPreview"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.SendFeedback"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.Chats"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.InboxActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.Feedbacks"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name="garts.domain.com.garts.UserProfile"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="garts.domain.com.garts.MapActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- file provider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource"/>
+        </provider>
+
+        <!-- For Google Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- For Facebook SDK -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value"/>
+
+        <!-- IMPORTANT: Replace "478517440140" with your own GCM Sender Id! -->
+        <meta-data
+            android:name="com.parse.push.gcm_sender_id"
+            android:value="id:478517440140"/>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true"/>
+
+        <service android:name="com.parse.PushService"/>
+
+        <service android:name="garts.domain.com.garts.firebase.MyFirebaseMessagingService"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+
+                <!-- IMPORTANT: Replace "garts.domain.com.garts" with your own app's package name! -->
+                <category android:name="garts.domain.com.garts"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE"/>
+                <action android:name="com.parse.push.intent.OPEN"/>
+                <action android:name="com.parse.push.intent.DELETE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
