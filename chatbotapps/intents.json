@@ -1,0 +1,50 @@
+{"intents": [
+        {"tag": "greetings",
+         "patterns": ["Hi", "Is anyone there", "Hello", "Good day", "Can you help me", "Hola"],
+         "responses": ["Hello", "Good to see you again", "Hi there, how can I help you?",
+           "Is there something that I can help you with?"],
+         "context": ""
+        },
+        {"tag": "greetings2",
+         "patterns": [ "How are you", "Whats up"],
+         "responses": ["I am fine!, How about you?", "I am good, you?", "What can I do for you?"],
+         "context": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "I am leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!", "See you later on","Glad to talk with you"],
+         "context": ""
+        },
+        {"tag": "thanks",
+          "patterns": ["Thank you for your help", "Thank you", "Thanks", "That's great, thank you","That's a big help, thanks", "Awesome, thank you"],
+          "responses": ["Your welcome", "Glad to help you", "Great to be a help", "It is my pleasure", "Any time!"],
+          "context": ""
+        },
+        {"tag": "name",
+         "patterns": ["What is your name", "What should I call you", "What's your name", "How should I call you","Do you have a name", "Name"],
+         "responses": ["You can call me Garts", "I'm Garts!"],
+         "context": ""
+        },
+        {"tag": "customer",
+         "patterns": ["I'd like to buy something", "What kind of arts do you sell", "Any recommended arts","Could I get something to be look at", "Who the artist are", "Can I get someone to make an art for me","Can I customized the arts"],
+         "responses": ["We sell digital and craft arts here", "We sell custom digital art, based on the customers preference","I recommend you to look at our artists project first", "You should look at our best artists in this application","There are several artists from many province in Indonesia you may look at","You can ask the artists to make a custom art for you"],
+         "context": ""
+        },
+        {"tag": "artist",
+          "patterns": ["Can I do open commission here", "Are there any requirements to sell arts here","Are there any requirements to sell arts here", "What kind of arts can we sell here", "Can I set my own fare for the arts?"],
+          "responses": ["You can do open commission here", "You may check the requirements in the setting","You can sell your digital art projects, even craft projects", "You can set your own fare for selling the arts"],
+          "context": ""
+        },
+        {"tag": "hours",
+         "patterns": ["When are you guys online", "What are your hours", "Hours of operation","What hours do the shipping will be done", "How long does it take to sent the art","How many days to do the the shipping"],
+         "responses": ["We do online for 24 hours", "The shipping will be done based on each artists capability",
+         "The art that are custom will be sent based on the time of each artists", "The shipping probably takes 2 to 3 days"],
+         "context": ""
+        },
+        {"tag": "size",
+          "patterns": ["How about the size of the arts and crafts", "How big the portrait will be", "Size of the arts and crafts","Size of the arts", "Size of the crafts"],
+          "responses": ["The arts and crafts size will depend on customers preferences, if the customers buy it with custom option","If the arts and crafts is listed as the artists project, customers may read the details of the arts and crafts in the product details box","It depends on the artists to decide the size"],
+          "context": ""
+        }
+   ]
+}
